@@ -1,0 +1,12 @@
+@for $i from 1 through 100 {
+    .w-#{$i * 1} {
+        width: $i * 1% !important;
+    }
+}
+.m-16 {
+    margin: 16px;
+}
+.d-inline-flex-align-center {
+    display: inline-flex;
+    align-items: center;
+}

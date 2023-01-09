@@ -1,0 +1,41 @@
+.el-form {
+    background: #fff;
+    padding: 12px;
+    margin: 16px;
+}
+.el-table {
+    width: auto;
+    margin: 16px;
+    .el-table__cell {
+        padding: 10px 0;
+    }
+}
+.introduce {
+    padding: 6px 25px;
+    background: #fff;
+}
+.el-scrollbar {
+    height: auto;
+}
+
+.datetimepicker {
+    padding: 6px 16px;
+    display: flex;
+    max-width: 500px;
+    flex: 1;
+}
+.datetimepicker:last-child {
+    border-right: none;
+}
+.datetimepicker .demonstration {
+    display: block;
+    color: var(--el-text-color-secondary);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.el-radio-group {
+    flex-wrap: nowrap;
+}
+.el-pagination {
+    justify-content: flex-end;
+}

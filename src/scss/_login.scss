@@ -1,0 +1,23 @@
+.login {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left: -48%;
+        background-image: url("/login-bg.svg");
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        content: "";
+    }
+    .login-form {
+        position: absolute;
+        left: 65%;
+        top: 20%;
+    }
+}

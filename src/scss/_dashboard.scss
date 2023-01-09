@@ -1,0 +1,33 @@
+.layout-container-demo {
+    height: 100vh;
+    .el-aside {
+        color: var(--el-text-color-primary);
+        background: #001529;
+    }
+    .el-sub-menu__title,.el-menu-item {
+        color: #ffffffb3;
+        &.active {
+            background: #0960bd;
+            color: #fff;
+        }
+    }
+    .el-header {
+        position: relative;
+        color: var(--el-text-color-primary);
+        border-bottom: 1px solid #ddd;
+    }
+    .el-menu {
+        border-right: none;
+    }
+    .toolbar {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        right: 20px;
+    }
+    .el-main {
+        padding: 0;
+        background: #f0f2f5;
+    }
+}
