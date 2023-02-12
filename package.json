@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "host": "vite --mode host"
+    "host": "vite --mode host",
+    "test-build": "vite build --mode test"
   },
   "dependencies": {
     "element-plus": "^2.2.12",
