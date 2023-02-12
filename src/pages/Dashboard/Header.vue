@@ -5,24 +5,22 @@
                 <el-icon style="margin-right: 8px; margin-top: 1px"><setting /></el-icon>
                 <template #dropdown>
                     <el-dropdown-menu>
-                        <el-dropdown-item>View</el-dropdown-item>
-                        <el-dropdown-item>Add</el-dropdown-item>
-                        <el-dropdown-item>Delete</el-dropdown-item>
+                        <el-dropdown-item @click="logout">登出</el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
             </el-dropdown>
-            <span>Tom</span>
+            <span>{{ userInfo.username }}</span>
         </div>
     </el-header>
 </template>
 
-<script>
+<script setup>
+import { inject, toRefs } from "vue";
 import { Setting } from "@element-plus/icons-vue";
-
-export default {
-    name: "Header",
-    components: {
-        Setting,
-    },
-};
+import router from "@/router";
+const { state } = inject("store");
+const { userInfo } = toRefs(state);
+async function logout() {
+    router.push("/login");
+}
 </script>

@@ -10,19 +10,12 @@
     </el-container>
 </template>
 
-<script>
-import Sidebar from "@/components/Sidebar.vue";
-import Header from "@/components/Header.vue";
-import { Setting } from "@element-plus/icons-vue";
-
-export default {
-    components: {
-        Sidebar,
-        Setting,
-        Header,
-    },
-    setup() {
-        return {};
-    },
-};
+<script setup>
+import { inject, onMounted } from "vue";
+import Sidebar from "./Sidebar.vue";
+import Header from "./Header.vue";
+const { getUserInfo } = inject("store");
+onMounted(() => {
+    getUserInfo();
+});
 </script>

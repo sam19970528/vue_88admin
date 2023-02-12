@@ -3,22 +3,6 @@
         <el-row :gutter="20">
             <el-col :span="6">
                 <div class="card">
-                    <div class="card-header">商戶號</div>
-                    <div class="card-body">
-                        <h1>aa888</h1>
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span="6">
-                <div class="card">
-                    <div class="card-header">當前額度</div>
-                    <div class="card-body">
-                        <h1>$100.00</h1>
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span="6">
-                <div class="card">
                     <div class="card-header">總充值金額</div>
                     <div class="card-body">
                         <h1>$1000.00</h1>

@@ -3,7 +3,7 @@ const routes = [
     {
         path: "/",
         name: "Dashboard",
-        component: () => import("@/pages/Dashboard.vue"),
+        component: () => import("@/pages/Dashboard/index.vue"),
         children: [
             /* 首頁 */
             {
@@ -13,7 +13,7 @@ const routes = [
             {
                 path: "/home",
                 name: "Home",
-                component: () => import("@/pages/Home.vue"),
+                component: () => import("@/pages/Home/index.vue"),
             },
             /* 帳務管理 */
             {
